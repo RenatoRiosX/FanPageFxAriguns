@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+
+    text-align: center;
+    padding: 20px 0;
+
+}
+nav{
+    background-color: #fac8cb;
+}
+
+nav ul{ 
+    width: 800px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    width: 200px;
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+	padding: 20px 0;
+
+}
+
+nav ul li a:hover{
+    background-color: #fff
+}
+
+
+#principal{
+    background-image: url(img/patron.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 80px;
+}
+
+#principal h1{
+    font-size: 84px;
+    text-align: center;
+    color: #fff;
+    padding: 80px; /*PARA SEPARAR Y QUE NO QUEDE TAPADO POR EL ABSOLUTE*/
+}
+
+#productos{
+    width: 1200px;
+    margin: 50px auto 0 auto;
+    overflow: auto;
+
+}
+#productos article{
+    float: left;
+    width: 300px;
+    padding: 40px 50px;
+    text-align: center;
+    color:#fff;
+}
+#helado1{
+    background-color: #7d7dc5;
+}
+#helado2{
+    background-color:  #ff7fbc;
+}
+#helado3{
+    background-color: #7dbee6;
+}
+
+#productos article a{
+    display: block;
+    width: 250px;
+    padding: 20px; 
+    margin: 20px auto;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #ffffff
+}
+
+#helado1 a:hover{
+    background-color: #fff;
+    color: #7d7dc5
+}
+#helado2 a:hover{
+    background-color: #fff;
+    color: #ff7fbc
+}
+#helado3 a:hover{
+    background-color: #fff;
+    color:  #7dbee6;
+}
+
+#productos article h2{
+    margin: 20px;
+}
+#noticias{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#not1 img, #not2 img{
+    margin: 40px;
+
+}
+#not1{
+    width: 600px;
+    height: 350px;
+    margin: 40px 0;
+    float: left;
+    background-color: #00f0f2;
+}
+
+#not2{
+    width: 600px;
+    height: 350px;
+    margin: 40px 0;
+    float: left;
+    background-color: #ff7fbc;
+
+}
+#not1 p, #not2 p{ 
+    margin: 20px 60px;
+}
+#not1 h2, #not2 h2{
+    
+    color: #fff;
+    margin: 50px 100px;
+  
+}
+footer{
+    padding: 30px 0;
+    text-align: center;
+    background-color: #fac8cb
+}
+
+footer img{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+footer ul{ width: 400px; overflow: auto; list-style-type: none; margin: 0 auto;}
+
+footer ul li{ float:left;}
