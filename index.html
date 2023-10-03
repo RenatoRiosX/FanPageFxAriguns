@@ -8,6 +8,9 @@
         <meta name="description" content="La pasion por los rifles FX nos une.">
         <meta name="keywords" content="fx airguns, rifles fx, rifles pcp fx, fx pcp airgun">
         <link href="estilos.css" rel="stylesheet" type="text/css"/>
+        <!-- Fuente Externa -->
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Gruppo&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -30,55 +33,94 @@
             <figure>
                 <img src="img/m3Standard.png" alt=""/>
             </figure>
-
-            <h1>El rifle FX más comprado</h1>
+            
+            <div>
+                <h1>El rifle FX más comprado</h1>
+                <p>Descubre en el boletín de esta semana los secretos del Impact M3</p>
+                <input type="email" placeholder="Ingresa tu e-mail" id="email">
+                <a href="#">¡Me apunto!</a>
+            </div>
         </section>
+
         <section id="productos">
-            <article id="helado1">
-                <figure><img src="img/helado1.png" alt=""/></figure>
-                <h2>Belgian Chocolate</h2>
-                <p>Helado de puro chocolate belga con delicadas láminas de chocolate belga negro.</p>
-                <nav><a href="#"> Ir al producto</a></nav>
-
+            <h2>Elige el rifle que se adapte a ti</h2>  <!-- Ponerle ancho 100% -->
+            <p>Existe un rifle FX para cada necesidad que tengas</p> <!-- Ponerle ancho 100% -->
+            <article id="producto1"> <!-- Aplicar flex grow: 1 -->
+                <figure><img src="img/verticalPantehra.png" alt=""/></figure>                             
+                <h3>Panthera</h3>
+                <p class="precio">Precio: $1590</p>
+                <p>El FX Panthera es diferente a cualquier rifle de FX Airguns anterior.</p>                
             </article>
-            <article id="helado2">
-                <img src="img/helado2.png" alt=""/>
-                <h2>Strawberries and Cream</h2>
-                <p>Helado de crema y fresa con trozos de las fresas más selectas.</p>
-                <a href="#"> Ir al producto</a>
-
-
+            <article id="producto2">
+                <figure><img src="img/verticalDreamlineLite.png" alt=""/></figure>
+                <h3>Dream Line Lite</h3>
+                <p class="precio">Precio: $1590</p>
+                <p>El FX Dreamline Lite es un modelo de aspecto nuevo, diferente a otros rifles FX.</p>
             </article>
-            <article id="helado3">
-                <img src="img/helado3.png" alt=""/>
-                <h2>Tiramisu</h2>
-                <p>Queso Mascarpone, salsa de chocolate fundido y galletas espolvoreadas con cacao.</p>
-                <a href="#"> Ir al producto</a>
+            <article id="producto3">
+                <figure><img src="img/verticalWildcatMkIII.png" alt=""/></figure>
+                <h3>Wildcat MKII</h3>
+                <p class="precio">Precio: $1590</p>
+                <p>El icónico rifle de aire comprimido bullpup, el FX Wildcat.</p>                
             </article>
+
+            <a href="#">Ver más productos</a>
         </section>
+
         <section id="noticias">
-            <article id="not1">
+            <h2>Titulo</h2>
+            <p>texto dsf sdf</p>
+            <article id="noticiaPrincipal">
                 <figure><img src="img/helado4.png" alt=""/></figure>
-                <h2>Tiramisu</h2>
+
+                <h2>Título</h2>
                 <p>
                     El tiramisú (del italiano tiramisù) es un postre frío de cuchara que se monta en capas. No existe una receta única de elaboración, sino variantes a partir de una serie de ingredientes base que pueden ser representados por distintos productos. Se prepara con café y un poco de licor.
                 </p>
+                <a href="#">Ver más</a>
             </article>
+            <article id="not1">
+                <figure><img src="img/helado4.png" alt=""/></figure>
+
+                <div>
+                    <h2>Título</h2>
+                    <p>
+                        El tiramisú (del italiano tiramisù) es un postre frío de cuchara que se monta en capas.
+                    </p>
+                    <span>Categoria 1</span>
+                    <span>Categoria 2</span>
+                </div>
+            </article>
+
             <article id="not2">
-                <img src="img/helado5.png" alt=""/>
-                <h2>Delivery</h2>
-                <p>
-                    El resultado de la gestión del reparto o delivery es la operación de colocar en el tiempo acordado, en las condiciones acordadas, y a la persona adecuada la cantidad precisa de un bien o servicio adquirido.
-                    El avance en las comunicaciones y el uso de las nuevas tecnologías de la información han permitido que también sea una condición del servicio disponer de trazabilidad del producto en tiempo real.
-                </p>
+                <figure><img src="img/helado5.png" alt=""/></figure>
+                <div>
+                    <h2>Título</h2>
+                    <p>
+                        El resultado de la gestión del reparto o delivery es la operación de colocar en el tiempo acordado.
+                    </p>
+                    <span>Categoria 2</span>
+                    <span>Categoria 3</span>
+                </div>
             </article>
         </section>
+
+        <section id="galeria">
+            <h2>Galería</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+
         <footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam facilis sint</p>
             <nav>
                 <ul>
                     <li><img src="img/fb.png" alt=""/></li>
                     <li><img src="img/ins.png" alt=""/></li>
-                    <li><img src="img/pin.png" alt=""/></li>
                     <li><img src="img/tw.png" alt=""/></li>
                 </ul>
             </nav>
