@@ -36,7 +36,6 @@ header figure img{
 
 nav{
     background-color: rgb(226, 231, 231);
-    border-radius: 30px;
 }
 
 nav ul{ 
@@ -63,7 +62,6 @@ nav ul li a{
 
 nav ul li a:hover{
     background-color: var(--cTexto);
-    border-radius: 30px;
 }
 
 /* SECTION PRINCIPAL */
@@ -256,10 +254,9 @@ input {
     display: grid;
     margin: 0 auto;
     justify-content: center;
-    grid-template-columns: repeat(3,450px);
+    grid-template-columns: repeat(3,460px);
     grid-template-rows: repeat(2,auto);
     grid-gap: 10px;
-    background-color: var(--cGrayNickel);
     margin-bottom: 40px;
     padding-bottom: 20px;
 }
@@ -378,50 +375,61 @@ input {
 /* SECTION GALERIA */
 
 #galeria {
-    display: grid;
-    grid-template-columns: 1400px;
-    grid-template-rows: repeat(3,auto);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #D1B660;
-    padding-top: 30px;
+    padding: 30px 0;
 }
 #galeria h2 {
-    grid-column: 1/span 1;
-    grid-row: 1/span 1;
     text-align: center;
     font-size: 45px;
 }
 
 #galeria p {
-    grid-column: 1/span 1;
-    grid-row: 2/span 1;
     text-align: center;
     margin-bottom: 20px;
     font-size: 25px;
 }
 
-#galeria div {
-    grid-column: 1/span 1;
-    grid-row: 3/span 1;
+#cajaFotos{
     
     width: 1400px;
     /* GRILLA DENTRO DEL DIV */
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: repeat(5,280px);
     grid-template-rows: repeat(3,auto);
-    justify-content: center;
     margin: 0 auto;
 }
 
 
-#galeria figure {
-    background-color: #fac8cb;
-    border: solid 1px var(--cBlanco);
+#galeria div figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-#galeria div figure {
-    width: 250px;
-    height: 200px;
+
+#galeria div figure:nth-of-type(1){
+    grid-column: 1/span 3;
+    grid-row: 1/span 3;
+    
 }
+
+#galeria div figure:nth-of-type(2){
+    grid-column: 4/span 2;
+    grid-row: 1/span 1;
+}
+
+#galeria div figure:nth-of-type(3){
+    grid-column: 4/span 2;
+    grid-row: 2/span 3;
+}
+
+#galeria div figure:nth-of-type(4){
+    grid-column: 1/span 3;
+    grid-row: 4/span 1;
+}
+
 /* FOOTER */
 
 footer{
