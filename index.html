@@ -111,26 +111,37 @@
         <section id="contacto">
             <h2>Contacto</h2>
             <p class="textoDebajoTitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <form action="/submit_form">
-                <label for="fname">Nombre:</label><br>
-                <input type="text" id="fname" name="fname" placeholder="Juan"><br>
-                <label for="lname">Apellido:</label><br>
-                <input type="text" id="lname" name="lname" placeholder="Perez"><br>
-                <label for="phone">Celular:</label><br>
-                <input type="tel" id="phone" name="phone" placeholder="099 589 454"><br>
-                <label for="country">País:</label><br>
-                <select id="country" name="country">
-                    <!-- opciones de país -->
-                  <option value="">Selecciona un país</option>
-                  <option value="">Aregentina</option>
-                  <option value="">Uruguay</option>
-                  <option value="">Brasil</option>
-                  <option value="">Chile</option>
-                  
-                </select><br>
-                <label for="comments">Comentarios:</label><br>
-                <textarea id="comments" name="comments" placeholder="Cuentenos que piensa..."></textarea><br>
-                <input type="submit" value="ENVIAR">
+            <form action="/submitForm">
+
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Juan">
+                </div>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Perez">
+                </div>
+                <div>
+                    <label for="celular">Celular:</label><br>
+                    <input type="tel" id="celular" name="celular" placeholder="099 589 454">
+                </div>
+                <div>
+                    <label for="pais">País:</label><br>
+                    <select id="pais" name="pais">
+                        <!-- opciones de país -->
+                      <option value="">Selecciona un país</option>
+                      <option value="">Argentina</option>
+                      <option value="">Uruguay</option>
+                      <option value="">Brasil</option>
+                      <option value="">Chile</option>
+                    
+                    </select>
+                </div>
+                <div>
+                    <label for="comentario">Comentarios:</label><br>
+                    <textarea id="comentario" name="comentario" placeholder="Cuentenos que piensa..."></textarea>
+                </div>
+                <input id="enviar" type="submit" value="ENVIAR">
             </form> 
 
             <table>
