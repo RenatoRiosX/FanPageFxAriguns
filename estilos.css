@@ -14,11 +14,17 @@
     font-family: 'Chakra Petch', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER */
 header{
     padding: 20px 0;
     display: flex;
     justify-content: center;
+    width: 1350px;
+    margin: 0 auto;
 }
 
 header figure {
@@ -129,22 +135,13 @@ input {
 /* SECTION PRODUCTOS */
 
 #productos{
+    width: 1350px;
     margin: 50px auto 0 auto;
-}
-
-#productos div {
-    width: 1400px;
     display: grid;
-    grid-template-columns: repeat(3,450);
-    grid-template-rows: repeat(1,auto);
+    grid-template-columns: repeat(3,450px);
+    grid-template-rows: repeat(4,auto);
     justify-content: center;
     margin: 0 auto;
-}
-
-#productos article{
-    padding-left: 20px;
-    color:var(--cBlanco);
-    margin-left: 5px;
 }
 
 #productos h2, #productos p{
@@ -154,9 +151,21 @@ input {
 }
 #productos h2{
     font-size: 50px;
+    margin-top: 40px;
+    grid-column: 1/span 3;
+    grid-row: 1/ span 1;
 }
 #productos p {
     font-size: 25px;
+    margin-bottom: 25px;
+    grid-column: 1/span 3;
+    grid-row: 2/ span 1;
+}
+
+#productos article{
+    padding-left: 20px;
+    color:var(--cBlanco);
+    margin-left: 5px;
 }
 
 #productos article .precio{
@@ -167,16 +176,16 @@ input {
 
 #productos article:nth-of-type(1){
     grid-column: 1/span 1;
-    grid-row: 1/span 1;
+    grid-row: 3/span 1;
 }
 
 #productos article:nth-of-type(2){
     grid-column: 2/span 1;
-    grid-row: 1/span 1;
+    grid-row: 3/span 1;
 }
 #productos article:nth-of-type(3){
     grid-column: 3/span 1;
-    grid-row: 1/span 1;
+    grid-row: 3/span 1;
 }
 
 
@@ -223,8 +232,10 @@ input {
 
 #productos a{
     font-family: 'Chakra Petch', sans-serif;
+    
+    grid-column: 1/span 3;
+    grid-row: 4/span 1;
 
-    display: block;
     width: 220px;
     text-align: center;
     text-decoration: none;
@@ -244,21 +255,19 @@ input {
 
 /* NOTICIAS */
 #noticias {
+
     background-color: rgb(230, 235, 236);
     padding-top: 20px;
     margin-top: 50px;
-}
-
-#noticias div{
-    width: 1400px;
     display: grid;
     margin: 0 auto;
     justify-content: center;
-    grid-template-columns: repeat(3,460px);
-    grid-template-rows: repeat(2,auto);
-    grid-gap: 10px;
+    grid-template-columns: repeat(2,675px);
+    grid-template-rows: repeat(4,auto);
+
+    grid-gap: 5px;
     margin-bottom: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 #noticias h2, #noticias .textoDebajoTitulo {
@@ -268,6 +277,13 @@ input {
 
 #noticias h2 {
     font-size: 50px;
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
+}
+
+#noticias p {
+    grid-column: 1/span 2;
+    grid-row: 2/span 1;
 }
 
 #noticias .textoDebajoTitulo {
@@ -278,24 +294,17 @@ input {
 #noticiaPrincipal{  
     border: solid 1px var(--cMerlin);
     grid-column: 1/span 2;
-    grid-row: 1/span 2;
-    width: 870px;
+    grid-row: 3/span 2;
+    width: 630px;
 }
 
-#noticiaPrincipal h3{
-    margin-bottom: 15px;
-}
-#noticiaPrincipal p{
+#noticiaPrincipal h3, #noticiaPrincipal p{
     margin-bottom: 15px;
 }
 
 #noticiaPrincipal a{
     font-size: 15px;
     font-weight: bold;
-}
-
-#noticiaPrincipal figure {
-    width: 800px;
 }
 
 #noticiaPrincipal figure img {
@@ -308,19 +317,17 @@ input {
 }
 
 #not1{
-
-    width: 450px;
-    grid-column: 3/span 1;
-    grid-row: 1/span 1;
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
     border: solid 1px var(--cMerlin);
     padding-left: 15px;
 }
 
-#not1 figure {
-    width: 200px;
+#not1 figure, #not2 figure {
+    width: 300px;
 }
 
-#not1 figure img {
+#not1 figure img, #not2 figure img  {
     width: 100%;
     height: 100%;
 }
@@ -333,7 +340,7 @@ input {
     padding-bottom: 15px;
 }
 
-#not1 span {
+#not1 p span {
     padding: 5px 10px;
     margin-left: 5px;
     background-color: var(--cGrayNickel);
@@ -341,20 +348,10 @@ input {
 } 
 
 #not2{
-    width: 450px;
-    grid-column: 3/span 1;
-    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+    grid-row: 4/span 1;
     border: solid 1px var(--cMerlin);
     padding-left: 15px;
-}
-
-#not2 figure {
-    width: 200px;
-}
-
-#not2 figure img {
-    width: 100%;
-    height: 100%;
 }
 
 #not2 h3{
@@ -372,63 +369,115 @@ input {
     border-radius: 10px;
 } 
 
+
 /* SECTION GALERIA */
 
 #galeria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: #D1B660;
     padding: 30px 0;
+
+    display: grid;
+    grid-template-columns: repeat(5,270px);
+    grid-template-rows: repeat(2,auto) repeat(4,250px);
+    margin: 0 auto;
+    justify-content: center;
 }
 #galeria h2 {
     text-align: center;
     font-size: 45px;
+    grid-column: 1/span 5;
+    grid-row: 1/span 1;
 }
 
 #galeria p {
     text-align: center;
     margin-bottom: 20px;
     font-size: 25px;
+
+    grid-column: 1/span 5;
+    grid-row: 2/span 1;
 }
 
-#cajaFotos{
+#galeria figure{
+    width: 100%;
     
-    width: 1400px;
-    /* GRILLA DENTRO DEL DIV */
-    display: grid;
-    grid-template-columns: repeat(5,280px);
-    grid-template-rows: repeat(3,auto);
-    margin: 0 auto;
 }
 
-
-#galeria div figure img{
+#galeria figure img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: conver;
 }
 
-#galeria div figure:nth-of-type(1){
+#galeria figure:nth-of-type(1){
+    grid-column: 1/span 2;
+    grid-row: 3/span 2;
+}
+
+#galeria figure:nth-of-type(2){
     grid-column: 1/span 3;
-    grid-row: 1/span 3;
-    
+    grid-row: 5/span 2;
 }
 
-#galeria div figure:nth-of-type(2){
-    grid-column: 4/span 2;
+#galeria figure:nth-of-type(3){
+    grid-column: 3/span 2;
+    grid-row: 3/span 1;
+
+}
+
+#galeria figure:nth-of-type(4){
+    grid-column: 3/span 1;
+    grid-row: 4/span 1;
+
+}
+
+#galeria figure:nth-of-type(5){
+    grid-column: 4/span 1;
+    grid-row: 4/span 3;
+
+}
+
+#galeria figure:nth-of-type(6){
+    grid-column: 5/span 1;
+    grid-row: 3/span 4;
+
+}
+
+/* SECTION CONTACTO */
+
+#contacto {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,675px);
+    grid-template-rows: repeat(3,auto);
+    justify-content: center;
+}
+
+#contacto h2 {
+    text-align: center;
+    grid-column: 1/span 2;
     grid-row: 1/span 1;
 }
 
-#galeria div figure:nth-of-type(3){
-    grid-column: 4/span 2;
-    grid-row: 2/span 3;
+#contacto p {
+    text-align: center;
+    grid-column: 1/span 2;
+    grid-row: 2/span 1;
 }
 
-#galeria div figure:nth-of-type(4){
-    grid-column: 1/span 3;
-    grid-row: 4/span 1;
+#contacto form {
+    grid-column: 1/span 1;
+    grid-row: 3/span 1;
+    border: solid 1px black;
+    /* display: flex; */
 }
+
+#contacto table {
+    grid-column: 2/span 2;
+    grid-row: 3/span 1;
+    border: solid 1px black;
+}
+
 
 /* FOOTER */
 
