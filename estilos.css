@@ -526,12 +526,28 @@ input {
     grid-column: 1/span 2;
     grid-row: 4/span 1;
     width: 590px;
+    font-weight: 900;
 }
 #contacto table {
     grid-column: 2/span 2;
     grid-row: 3/span 1;
     border: solid 1px black;
-    font-weight: 900;
+    background-color: var(--cGrayNickel);
+    border-collapse: collapse;
+    margin-left: 40px;
+}
+#contacto table caption {
+    background-color: var(--cGrayNickel);
+}
+
+ 
+#contacto table td, 
+#contacto table th{
+    border: solid 1px black;
+    padding: 5px;
+}
+#contacto table caption {
+    font-size: 25px;
 }
 
 #contacto form div {
@@ -555,6 +571,7 @@ footer{
     text-align: center;
     background-color: var(--cMerlin);
 }
+
 footer p {
     padding-bottom: 20px;
     font-size: 15px;
