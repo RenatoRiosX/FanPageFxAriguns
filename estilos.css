@@ -6,6 +6,8 @@
     --cSantasGray: #9C9CA4;
     --cTexto: #D1B660;
     --cBlanco: #ffff;
+    --cNegro: #000000;
+    --cGrisClaro: #f2f2f2;
 }
 
 *{
@@ -22,7 +24,7 @@ html {
 header{
     padding: 20px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 1350px;
     margin: 0 auto;
 }
@@ -162,11 +164,44 @@ input {
     grid-row: 2/ span 1;
 }
 
+#productos article .descripcion {
+    width: 400px;
+}
 #productos article{
     padding-left: 20px;
     color:var(--cBlanco);
-    margin-left: 5px;
+    margin-left: 5px; 
 }
+
+#producto2 {
+    transform-origin: center center; 
+    transition: transform 0.5s, box-shadow 0.5s;
+    cursor: pointer;
+}
+  
+#producto2:hover { 
+    transform:rotate(90deg);
+    z-index: 1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#producto2:hover h3,
+#producto2:hover .precio,
+#producto2:hover .descripcion {
+    display: none; /* Oculta el texto al pasar el mouse sobre #producto2 */
+}
+  
+#producto2:hover figure {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-40%, -50%); 
+}
+#producto2:hover img {
+    transform:scale(1.4);
+}
+
 
 #productos article .precio{
     font-size: 20px;
@@ -192,14 +227,14 @@ input {
 #productos #producto1 figure,
 #productos #producto2 figure,
 #productos #producto3 figure{
-    width: 280px;
-    height: 850px;
+    width: 400px;
+    height: 700px;
 }
 
 #productos article:nth-of-type(1) figure img,
 #productos article:nth-of-type(2) figure img,
 #productos article:nth-of-type(3) figure img {
-    width: 100%;
+    width: 60%;
     height: 100%;
     object-fit: cover;
 }
@@ -247,6 +282,7 @@ input {
     margin: 25px auto;
     font-size: 20px;
 }
+
 
 #productos a:hover{
     background-color: var(--cTexto);
@@ -382,6 +418,7 @@ input {
     margin: 0 auto;
     justify-content: center;
 }
+
 #galeria h2 {
     text-align: center;
     font-size: 45px;
@@ -448,7 +485,6 @@ input {
 #contacto {
     margin-top: 30px;
     display: grid;
-    /* grid-template-columns: repeat(2,675px); */
     grid-template-columns: 600px 750px;
     grid-template-rows: repeat(3,auto);
     justify-content: center;
@@ -473,7 +509,6 @@ input {
 #contacto form {
     grid-column: 1/span 1;
     grid-row: 3/span 1;
-    border: solid 1px black;
 
     /*GRILLA DENTRO DEL FORM*/
     display: grid;
@@ -492,10 +527,24 @@ input {
     padding: 10px;
 }
 
+#contacto input:focus {
+    background-color: var(--cGrisClaro); 
+    color: var(--cNegro); 
+}
+#contacto select:focus {
+    background-color: var(--cGrisClaro); 
+    color: var(--cNegro); 
+}
+
+#contacto textarea:focus {
+    background-color: var(--cGrisClaro); 
+    color: var(--cNegro); 
+}
+
 #comentario {
     width: 590px;
     height: 60px;
-    font-size: 15px;
+    font-size: 20px;
 }
 #contacto form div:nth-of-type(1){
     grid-column: 1/span 1;
@@ -531,13 +580,8 @@ input {
 #contacto table {
     grid-column: 2/span 2;
     grid-row: 3/span 1;
-    border: solid 1px black;
-    background-color: var(--cGrayNickel);
     border-collapse: collapse;
     margin-left: 40px;
-}
-#contacto table caption {
-    background-color: var(--cGrayNickel);
 }
 
  
