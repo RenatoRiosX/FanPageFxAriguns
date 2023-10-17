@@ -274,8 +274,8 @@ input {
     width: 220px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50px;
     color: var(--cTexto);
+    border-radius: 20px;
     border: 1px solid var(--cGrayNickel);
     background-color: var(--cMerlin);
     padding: 15px; 
@@ -305,6 +305,9 @@ input {
     margin-bottom: 40px;
     padding-bottom: 40px;
 }
+#noticiaPrincipal, #not1, #not2 {
+    background-color: var(--cGrisClaro);
+}
 
 #noticias h2, #noticias .textoDebajoTitulo {
     width: 100%;
@@ -328,7 +331,6 @@ input {
 }
 
 #noticiaPrincipal{  
-    border: solid 1px var(--cMerlin);
     grid-column: 1/span 2;
     grid-row: 3/span 2;
     width: 630px;
@@ -355,7 +357,6 @@ input {
 #not1{
     grid-column: 2/span 1;
     grid-row: 3/span 1;
-    border: solid 1px var(--cMerlin);
     padding-left: 15px;
 }
 
@@ -386,7 +387,6 @@ input {
 #not2{
     grid-column: 2/span 1;
     grid-row: 4/span 1;
-    border: solid 1px var(--cMerlin);
     padding-left: 15px;
 }
 
@@ -437,7 +437,11 @@ input {
 
 #galeria figure{
     width: 100%;
-    
+    transition: transform 0.3s; 
+}
+
+#galeria figure:hover {
+    transform: scale(1.1); /* Aumenta el tamaño en un 10%*/
 }
 
 #galeria figure img{
@@ -525,6 +529,7 @@ input {
     width: 275px;
     font-size: 15px;
     padding: 10px;
+    border: solid 2px var(--cMerlin);
 }
 
 #contacto input:focus {
@@ -642,7 +647,30 @@ footer ul li{
 }
 
 footer ul li a img:hover {
-    border: 2px solid var(--cSantasGray);
+    border: 2px solid var(--cTexto);
     border-radius: 50%;
 
 }
+
+/* Estilos para el botón de volver arriba */
+#btnSubir {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    border: solid 1px var(--cNegro);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilo cuando se pasa el mouse sobre el botón */
+  #btnSubir:hover {
+    background-color: var(--cTexto);
+  }

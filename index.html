@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        <header>
+        <header id="header">
             <figure>
                 <a href="index.html"><img src="img/logo.png" alt=""/></a>
             </figure>
@@ -47,14 +47,14 @@
             <p>Existe un rifle FX para cada necesidad que tengas</p>
             <article id="producto1"> 
                 <figure><img src="img/verticalDreamlineLite.png" alt=""/></figure>                             
-                <h3>Panthera</h3>
-                <p class="precio">Precio: $1990</p>
+                <h3>Dream Line Lite</h3>
+                <p class="precio">Precio: $1190</p>
                 <p class="descripcion">El FX Dreamline Lite es un modelo de aspecto nuevo, diferente a otros rifles FX.</p>                
             </article>
             <article id="producto2">
                 <figure><img src="img/verticalPantehra.png" alt=""/></figure>
-                <h3>Dream Line Lite</h3>
-                <p class="precio">Precio: $1190</p>
+                <h3>Panthera</h3>
+                <p class="precio">Precio: $1990</p>
                 <p class="descripcion">El FX Panthera es diferente a cualquier rifle de FX Airguns anterior.</p>
             </article>
             <article id="producto3">
@@ -102,8 +102,8 @@
 
             <figure><img src="/img/3m3.jpg" alt=""></figure> 
             <figure><img src="/img/m3Sniper.jpeg" alt=""></figure>
-            <figure> <img src="/img/m3Amarrilla.jpg" alt=""></figure>
-            <figure><img src="/img/m3Compacta.jpg" alt=""></figure>
+            <figure> <img src="/img/m3LongRange.jpg" alt=""></figure>
+            <figure><img src="/img/m3Tactical.webp" alt=""></figure>
             <figure><img src="/img/m3Camuflada.jpg" alt=""></figure>
             <figure><img src="/img/m3RojaNegra.jpg" alt=""></figure>
         </section>
@@ -138,8 +138,8 @@
                     </select>
                 </div>
                 <div>
-                    <label for="comentario">Comentarios:</label><br>
-                    <textarea id="comentario" name="comentario" placeholder="Cuentenos que piensa..."></textarea>
+                    <label for="comentario">Comentario:</label><br>
+                    <textarea id="comentario" name="comentario" placeholder="Tu comentario..."></textarea>
                 </div>
                 <input id="enviar" type="submit" value="ENVIAR">
             </form> 
@@ -190,15 +190,27 @@
 
         </section>
 
+        <!-- Botón para volver arriba -->
+        <a href="#header" id="btnSubir"><img src="/img/arrow-up.png" alt=""></i></a>
+
         <footer>
             <p>© 2023 Club de Fans - Creado por Renato Ríos</p>
-
             <ul>
                 <li><a href="https://www.instagram.com/renato_riosx/"><img src="img/fb.png" alt=""/></a></li>
                 <li><a href="https://www.facebook.com/renato.rios.31508"><img src="img/ins.png" alt=""/></a></li>
                 <li><a href="https://twitter.com/RenatoRiosX"><img src="img/tw.png" alt=""/></a></li>
             </ul>
-
         </footer>
+
+        <!-- <script>
+            // JavaScript para mostrar u ocultar el botón
+            window.onscroll = function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("btnSubir").style.display = "block";
+                } else {
+                    document.getElementById("btnSubir").style.display = "none";
+                }
+            };
+        </script> -->
     </body>
 </html>
