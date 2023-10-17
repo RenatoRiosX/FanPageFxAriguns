@@ -516,41 +516,41 @@ input {
 
     /*GRILLA DENTRO DEL FORM*/
     display: grid;
-    grid-template-columns: repeat(2,300px);
+    grid-template-columns: repeat(2,fr);
     grid-template-rows: repeat(4,auto);
+    column-gap: 40px;
+    justify-content: end;
 }
 
-#contacto form input{
+#contacto input,
+#contacto select,
+#contacto textarea{
     border-radius: 10px;
+    border: solid 1px var(--cMerlin);
+}
+
+#contacto select{
+    padding: 10px;
 }
 
 #contacto form select{
-    border-radius: 10px;
-    width: 275px;
+    width: 277px;
     font-size: 15px;
-    padding: 10px;
-    border: solid 2px var(--cMerlin);
 }
 
-#contacto input:focus {
-    background-color: var(--cGrisClaro); 
-    color: var(--cNegro); 
-}
-#contacto select:focus {
-    background-color: var(--cGrisClaro); 
-    color: var(--cNegro); 
-}
-
-#contacto textarea:focus {
+#contacto input:focus,
+#contacto select:focus,
+#contacto textarea:focus{
     background-color: var(--cGrisClaro); 
     color: var(--cNegro); 
 }
 
 #comentario {
-    width: 590px;
+    width: 100%;
     height: 60px;
     font-size: 20px;
 }
+
 #contacto form div:nth-of-type(1){
     grid-column: 1/span 1;
     grid-row: 1/span 1;
@@ -559,7 +559,6 @@ input {
 #contacto form div:nth-of-type(2) {
     grid-column: 2/span 1;
     grid-row: 1/span 1;
-    padding-left: 15px;
 }
 #contacto form div:nth-of-type(3){
     grid-column: 1/span 1;
@@ -568,7 +567,6 @@ input {
 #contacto form div:nth-of-type(4){
     grid-column: 2/span 1;
     grid-row: 2/span 1;
-    padding-left: 15px;
 }
 
 #contacto form div:nth-of-type(5) {
@@ -576,10 +574,9 @@ input {
     grid-row: 3/span 1;
 }
 
-#contacto form #enviar {
+#enviar {
     grid-column: 1/span 2;
     grid-row: 4/span 1;
-    width: 590px;
     font-weight: 900;
     text-align: center;
     border-radius: 10px;
@@ -595,11 +592,10 @@ input {
     border-collapse: collapse;
     margin-left: 40px;
 }
-
  
 #contacto table td, 
 #contacto table th{
-    border: solid 1px black;
+    border: solid 1px var(--cNegro);
     padding: 5px;
 }
 #contacto table caption {
@@ -611,8 +607,8 @@ input {
 }
 
 #contacto form div label {
-    padding: 15px 5px;
     font-size: 20px;
+    display: block;
 }
 
 #enviar:hover{
@@ -637,8 +633,7 @@ footer p {
 footer img{
     border: 2px solid #fff;
     border-radius: 50%;
-    padding: 5px;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 footer ul{ 
