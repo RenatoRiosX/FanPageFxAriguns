@@ -581,7 +581,14 @@ input {
     grid-row: 4/span 1;
     width: 590px;
     font-weight: 900;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 1px var(--cMerlin);
+    color: var(--cNegro);
+    padding: 5px;
+    text-decoration: none;
 }
+
 #contacto table {
     grid-column: 2/span 2;
     grid-row: 3/span 1;
@@ -654,7 +661,7 @@ footer ul li a img:hover {
 
 /* Estilos para el botón de volver arriba */
 #btnSubir {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -667,10 +674,9 @@ footer ul li a img:hover {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    transition: background-color 0.3s;
-  }
+    transition: background-color 0.5s;
+}
   
-  /* Estilo cuando se pasa el mouse sobre el botón */
-  #btnSubir:hover {
+#btnSubir:hover {
     background-color: var(--cTexto);
-  }
+}

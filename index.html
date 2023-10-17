@@ -7,7 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="La pasion por los rifles FX nos une.">
         <meta name="keywords" content="fx airguns, rifles fx, rifles pcp fx, fx pcp airgun, rifles pcp">
+        <!-- Enlaces -->
         <link href="estilos.css" rel="stylesheet" type="text/css"/>
+        <script src="funciones.js"></script>
         <!-- Fuentes Externas -->
         <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Gruppo&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
@@ -46,19 +48,19 @@
             <h2>Elige el rifle que se adapte a ti</h2>  
             <p>Existe un rifle FX para cada necesidad que tengas</p>
             <article id="producto1"> 
-                <figure><img src="img/verticalDreamlineLite.png" alt=""/></figure>                             
+                <figure><img src="img/verticalDreamlineLite.png" alt="Fx dream line lite"/></figure>                             
                 <h3>Dream Line Lite</h3>
                 <p class="precio">Precio: $1190</p>
                 <p class="descripcion">El FX Dreamline Lite es un modelo de aspecto nuevo, diferente a otros rifles FX.</p>                
             </article>
             <article id="producto2">
-                <figure><img src="img/verticalPantehra.png" alt=""/></figure>
+                <figure><img src="img/verticalPantehra.png" alt="Fx Panthera"/></figure>
                 <h3>Panthera</h3>
                 <p class="precio">Precio: $1990</p>
                 <p class="descripcion">El FX Panthera es diferente a cualquier rifle de FX Airguns anterior.</p>
             </article>
             <article id="producto3">
-                <figure><img src="img/verticalWildcatMkIII.png" alt=""/></figure>
+                <figure><img src="img/verticalWildcatMkIII.png" alt="Fx lWildcat Mk 3"/></figure>
                 <h3>Wildcat MKII</h3>
                 <p class="precio">Precio: $1590</p>
                 <p class="descripcion">El icónico rifle de aire comprimido bullpup, el FX Wildcat.</p>                
@@ -70,7 +72,7 @@
             <h2>Últimas novedades</h2>
             <p class="textoDebajoTitulo">Obtén las últimas novedades sobre los rifles FX</p>            
             <article id="noticiaPrincipal">
-                <figure><img src="img/crownMKII.png" alt=""/></figure>
+                <figure><img src="img/crownMKII.png" alt="Fx crown MK 2"/></figure>
                 <h3>El nuevo FX Crown MKII</h3>
                 <p>
                     El FX Crown MKII trae más potencia e incluso más capacidades a una plataforma que ya era casi perfecta.
@@ -78,7 +80,7 @@
                 <a href="#">Ver más</a>
             </article>
             <article id="not1">
-                <figure><img src="img/t12Synthetic.png" alt=""/></figure>
+                <figure><img src="img/t12Synthetic.png" alt="Fx t12 sintetico"/></figure>
             
                 <h3>Noticia 2</h3>
                 <p>
@@ -87,7 +89,7 @@
                 <p><span>Categoria 1</span> <span>Categoria 2</span></p>
             </article>
             <article id="not2">
-                <figure><img src="img/dreamlineClassic.png" alt=""/></figure>
+                <figure><img src="img/dreamlineClassic.png" alt="Fx dream line classic"/></figure>
                 <h3>Noticia 3</h3>
                 <p>
                     El resultado de la gestión del reparto o delivery es la operación de colocar en el tiempo acordado.
@@ -100,12 +102,12 @@
             <h2>Las más bellas</h2>
             <p class="textoDebajoTitulo">Los rifles FX M3 más atractivos</p>
 
-            <figure><img src="/img/3m3.jpg" alt=""></figure> 
-            <figure><img src="/img/m3Sniper.jpeg" alt=""></figure>
-            <figure> <img src="/img/m3LongRange.jpg" alt=""></figure>
-            <figure><img src="/img/m3Tactical.webp" alt=""></figure>
-            <figure><img src="/img/m3Camuflada.jpg" alt=""></figure>
-            <figure><img src="/img/m3RojaNegra.jpg" alt=""></figure>
+            <figure><img src="/img/3m3.jpg" alt="Imagen de 3 rifles fx m3 modificados"></figure> 
+            <figure><img src="/img/m3Sniper.jpeg" alt="Imagen de un rifle fx m3 modificado version francotirador"></figure>
+            <figure> <img src="/img/m3LongRange.jpg" alt="Imagen de un rifle fx m3 modificado para largo alcance"></figure>
+            <figure><img src="/img/m3Tactical.webp" alt="Imagen de un rifle fx m3 modificado para que sea tactico"></figure>
+            <figure><img src="/img/m3Camuflada.jpg" alt="Imagen de un rifle fx m3 que posee un camuflaje unico"></figure>
+            <figure><img src="/img/m3RojaNegra.jpg" alt="Imagen de un rifle fx m3 pintado de rojo y negro"></figure>
         </section>
 
         <section id="contacto">
@@ -115,19 +117,19 @@
 
                 <div>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Juan">
+                    <input type="text" id="nombre" name="nombre" required placeholder="Juan">
                 </div>
                 <div>
                     <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Perez">
+                    <input type="text" id="apellido" name="apellido" required placeholder="Perez">
                 </div>
                 <div>
                     <label for="celular">Celular:</label><br>
-                    <input type="tel" id="celular" name="celular" placeholder="099 589 454">
+                    <input type="tel" id="celular" name="celular" required placeholder="099 589 454">
                 </div>
                 <div>
                     <label for="pais">País:</label><br>
-                    <select id="pais" name="pais">
+                    <select id="pais" name="pais" required>
                         <!-- opciones de país -->
                       <option value="">Selecciona un país</option>
                       <option value="">Argentina</option>
@@ -139,9 +141,9 @@
                 </div>
                 <div>
                     <label for="comentario">Comentario:</label><br>
-                    <textarea id="comentario" name="comentario" placeholder="Tu comentario..."></textarea>
+                    <textarea id="comentario" name="comentario" required placeholder="Tu comentario..."></textarea>
                 </div>
-                <input id="enviar" type="submit" value="ENVIAR">
+                <a href="#" id="enviar">Enviar</a>
             </form> 
 
             <table>
@@ -191,7 +193,7 @@
         </section>
 
         <!-- Botón para volver arriba -->
-        <a href="#header" id="btnSubir"><img src="/img/arrow-up.png" alt=""></i></a>
+        <a href="#header" id="btnSubir"><img src="/img/arrow-up.png" alt="Icono de flecha creado por Creative Stall Premium - Flaticon"></i></a>
 
         <footer>
             <p>© 2023 Club de Fans - Creado por Renato Ríos</p>
@@ -202,15 +204,5 @@
             </ul>
         </footer>
 
-        <!-- <script>
-            // JavaScript para mostrar u ocultar el botón
-            window.onscroll = function () {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("btnSubir").style.display = "block";
-                } else {
-                    document.getElementById("btnSubir").style.display = "none";
-                }
-            };
-        </script> -->
     </body>
 </html>
